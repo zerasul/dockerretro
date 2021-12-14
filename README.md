@@ -1,0 +1,36 @@
+# Devkitpro Docker files
+
+This repo have some Dockerfiles with information for Create a development environment for [Devkitpro](https://devkitpro.org/) ARM Development (for GameBoy Advance and Nintendo DS).
+
+This is only for demostration pruposes.
+
+You have 2 folders:
+
+* GBA: create a docker image with devkitpro libraries and tools and generate a volume for compile and generate gba roms.
+* NDS: create a docker image with devkitpro libraries and tools and generate a volume for compile and generate nds roms.
+
+## Build image
+
+```bash
+docker build -t <tag> .
+```
+
+## Compile and generate Rom
+
+* gba
+
+```bash
+docker run --rm -v <path-to-your-makefile>:/src/gba gba
+```
+
+* nds
+
+```bash
+docker run --rm -v <path-to-your-makefile>:/src/nds nds
+```
+
+You can find a template or example in the next repositories.
+
+* gba: [https://github.com/devkitPro/gba-examples](https://github.com/devkitPro/gba-examples)
+
+* nds: [https://github.com/devkitPro/nds-examples](https://github.com/devkitPro/nds-examples)
