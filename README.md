@@ -1,6 +1,6 @@
-# Devkitpro Docker files
+# Retro Docker files
 
-This repo have some Dockerfiles with information for Create a development environment for [Devkitpro](https://devkitpro.org/) ARM Development (for GameBoy Advance and Nintendo DS).
+This repo have some Dockerfiles with information for Create a development environment for [Devkitpro](https://devkitpro.org/) ARM Development (for GameBoy Advance and Nintendo DS) or SDL2 Linux Development.
 
 This is only for demostration pruposes.
 
