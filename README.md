@@ -8,6 +8,7 @@ You have 2 folders:
 
 * GBA: create a docker image with devkitpro libraries and tools and generate a volume for compile and generate gba roms.
 * NDS: create a docker image with devkitpro libraries and tools and generate a volume for compile and generate nds roms.
+* SDL: Create a docker image with SDL2 for linux or using cross compiling with mingw32.
 
 ## Build image
 
@@ -29,8 +30,24 @@ docker run --rm -v <path-to-your-makefile>:/src/gba gba
 docker run --rm -v <path-to-your-makefile>:/src/nds nds
 ```
 
+* sdl
+
+For Linux
+
+```bash
+docker run --rm -v <path-to-your-makefile>:/src/sdl2 sdl make all
+```
+
+For Windows
+
+```bash
+docker run --rm -v <path-to-your-makefile>:/src/sdl2 sdl make game.zip
+```
+
 You can find a template or example in the next repositories.
 
 * gba: [https://github.com/devkitPro/gba-examples](https://github.com/devkitPro/gba-examples)
 
 * nds: [https://github.com/devkitPro/nds-examples](https://github.com/devkitPro/nds-examples)
+
+* sdl: [https://github.com/emiliollbb/taller_sdl](https://github.com/emiliollbb/taller_sdl)
