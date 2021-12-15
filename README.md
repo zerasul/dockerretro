@@ -4,7 +4,7 @@ This repo have some Dockerfiles with information for Create a development enviro
 
 This is only for demostration pruposes.
 
-You have 2 folders:
+You have 3 folders:
 
 * GBA: create a docker image with devkitpro libraries and tools and generate a volume for compile and generate gba roms.
 * NDS: create a docker image with devkitpro libraries and tools and generate a volume for compile and generate nds roms.
