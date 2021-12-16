@@ -3,7 +3,7 @@ FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=nointeractive
 ENV TZ=Europe/Madrid
 
-RUN apt update
+RUN apt update && \
   apt install -y build-essential wget && \
   apt install -yq libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev libsdl2-mixer-dev mingw-w64 zip && \
   mkdir -p ~/sdl_win && \

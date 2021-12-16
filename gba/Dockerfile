@@ -7,7 +7,7 @@ RUN apt update && \
   wget https://github.com/devkitPro/pacman/releases/download/v1.0.2/devkitpro-pacman.amd64.deb && \
   dpkg -i devkitpro-pacman.amd64.deb && \
   ln -s /proc/self/mounts /etc/mtab && \
-  all | dkp-pacman --noconfirm -S gba-dev \
+  all | dkp-pacman --noconfirm -S gba-dev && \
   mkdir -p /src/gba
 ENV DEVKITARM=/opt/devkitpro/devkitARM
 ENV DEVKITPRO=/opt/devkitpro
