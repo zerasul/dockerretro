@@ -14,6 +14,7 @@ RUN apt update && \
 ENV DEVKITARM=/opt/devkitpro/devkitARM
 ENV DEVKITPRO=/opt/devkitpro
 ENV DEVKITPPC=/opt/devkitpro/devkitPPC
+ENV PATH="${DEVKITPRO}/tools/bin:${PATH}"
 WORKDIR /src/nds
 VOLUME ["/src/nds"]
 CMD ["make"]

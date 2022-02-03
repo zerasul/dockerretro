@@ -12,7 +12,7 @@ RUN apt update && \
 ENV DEVKITARM=/opt/devkitpro/devkitARM
 ENV DEVKITPRO=/opt/devkitpro
 ENV DEVKITPPC=/opt/devkitpro/devkitPPC
-
+ENV PATH="${DEVKITPRO}/tools/bin:${PATH}"
 WORKDIR /src/gba
 VOLUME ["/src/gba"]
 CMD ["make"]
