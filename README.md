@@ -48,6 +48,6 @@ You can find a template or example in the next repositories.
 
 * gba: [https://github.com/devkitPro/gba-examples](https://github.com/devkitPro/gba-examples)
 
-* nds: [https://github.com/devkitPro/nds-examples](https://github.com/devkitPro/nds-examples)
+* nds: [https://github.com/LaJaqueria/nds-examples](https://github.com/LaJaqueria/nds-examples)
 
 * sdl: [https://github.com/emiliollbb/taller_sdl](https://github.com/emiliollbb/taller_sdl)
